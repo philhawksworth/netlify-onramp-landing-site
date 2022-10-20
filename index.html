@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Push it real good</title>
-      <!-- Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&amp;display=swap" rel="stylesheet">
   <style>
-
     :root {
-      --color-bg: #ffffff;
-      --color-fg: #151a1e;
+      --color-bg: #151a1e;
+      --color-fg: #ffffff;
+      --color-fg-dimmed: #ddd;
       --color-gray-L300: #e7eaed;
       --color-gray-L800: #151a1e;
       --color-teal-T900: #054861;
@@ -33,100 +34,128 @@
       box-sizing: border-box;
     }
 
+    ul,
+    ol {
+      list-style: none;
+      line-height: 2
+    }
+
     /* Set core body defaults */
     body {
       min-height: 100vh;
       text-rendering: optimizeSpeed;
       line-height: 1.5;
       background-color: #111;
-      color: var(--color-bg);
+      color: var(--color-fg-dimmed);
       line-height: 1.5;
       font-family: var(--font-family-main);
       font-weight: var(--font-weight-normal);
       font-size: 16px;
       text-align: center;
-      padding:0;
-      margin:0;
+      padding: 0;
+      margin: 0;
     }
-    
+
     .content {
-      background-color: var(--color-fg);
+      background-color: var(--color-bg);
     }
-    
+
+    header {
+      padding: 3rem 0;
+    }
+
+    .strapline {
+      max-width: 400px;
+      margin: 0 auto;
+      color:#ddd;
+    }
+
     main {
       max-width: 700px;
-      margin:0 auto;
+      margin: 0 auto;
       text-align: left;
       padding: 0 3rem 3rem;
     }
 
+    h1, h2, h2 {
+      color: var(--color-fg);
+    }
+
+    h1 {
+      font-size: 6em;
+    }
+
+    h2 {
+      margin-top: 2em;
+    }
+
+    a:link,
+    a:visited {
+      color: var(--color-fg);
+      text-underline-offset: 0.2em;
+      text-decoration-color: #444
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration-color: var(--color-teal-T600);
+      color: #fff
+    }
+    footer {
+      border-top: 1px solid #333;
+      font-size: 0.8em;
+      color: #999;
+      padding: 3rem 0
+    }
+
 
   </style>
-  <style>.wmqjkddsk .card{font-size:0.9rem;box-shadow:-2px -2px 8px #30c8c9,2px 0px 10px #dc41f3;padding:2rem;margin:3rem 0;border:1px solid #999;border-radius:5px;color:var(--color-bg);background:var(--color-fg)}.wmqjkddsk .card:hover{--color-bg: #000;--color-fg: #fff;background:var(--color-fg);color:var(--color-bg);box-shadow:0 0 8px #ffffffcc}.wmqjkddsk h1{color:var(--color-bg);margin:0}.wmqjkddsk .feature-deployed{box-shadow:-2px -2px 8px #cff68dbd,2px 0px 10px #029b42a3}.wmqjkddsk .feature-deployed h1::after{content:"✓ Deployed";background-color:#eee;color:#151a1e;font-size:0.5em;font-weight:600;border-radius:3px;margin-left:1em;padding:0.2em 1em 0.2em 0.5em}.wmqjkddsk .description{margin:1rem 0 0.5rem}.wmqjkddsk a:link,.wmqjkddsk a:visited{color:var(--color-bg);font-weight:600}.wmqjkddsk a:hover,.wmqjkddsk a:focus{color:var(--color-blue-B500)}</style>
 </head>
+
 <body>
   <div class="content">
-    <page-header class="w0-vkhrrt"><style>.w0-vkhrrt header{text-align:center}.w0-vkhrrt h1{margin-top:0;font-size:1.8rem;padding-top:1em}.w0-vkhrrt h1 a{color:#fff}.w0-vkhrrt p{max-width:400px;margin:0 auto 4rem;color:#ddd}.w0-vkhrrt p.strapline{color:#fff;font-size:6rem;font-weight:600;line-height:1;margin:3rem auto;max-width:100%}</style>
+    <header>
+      <h1>
+        Netlify on-ramp
+      </h1>
+      <p class="strapline">
+        Quickly explore some of Netlify's features by in a starter project of your own
+      </p>
+    </header>
 
+    <main>
+      <h2>Step-by-step examples</h2>
+      <p>
+        Experience how fast it is to start using Netlify features such as <a href="https://netlify.com">Continuous Deployments</a>, <a href="https://netlify.com">Serverless APIs</a>, <a href="https://netlify.com">Edge
+        Functions</a>, <a href="https://netlify.com">Redirects</a>, and more.
+      </p>
 
-  <header>
-    <h1><a href="/">Netlify on-ramp</a></h1>
-    <p class="strapline">
-      Push it real good
-    </p>
-    <p>
-      Explore some of Netlify's features by committing a few changes to this project.
-    </p>
-  </header>
-
-</page-header>   
-    <main><ntl-card class="wmqjkddsk">
-
-<div class="card" id="feature-functions">
-    <h1>1. Netlify Functions</h1>
-    <div class="description">Create a serverless API with Netlify Functions</div>
-    <a href="/functions/">Add your first serverless function</a>
+      <h2>Click to begin</h2>
+      <p>
+        Click this button below to clone the example project into your own Git repository, create a new site, and start
+        exploring fetures.
+      </p>
+      <a href="https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/onramp">
+        <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
+      </a>
+    </main>
   </div>
 
-</ntl-card>
-
-<ntl-card class="wmqjkddsk">
-
-<div class="card" id="feature-redirects">
-    <h1>2. Redirects</h1>
-    <div class="description">Control your URLs with the Redirects API</div>
-    <a href="/redirects/">Create your first redirect.</a>
-  </div>
-
-</ntl-card>
-
-<ntl-card class="wmqjkddsk">
-
-<div class="card" id="feature-forms">
-    <h1>3. Netlify Forms</h1>
-    <div class="description">Use Netlify to automatically process your form submissions</div>
-    <a href="/functions/">Add a form ands start capturing submissions</a>
-  </div>
-
-</ntl-card>
-</main>
-  </div>
-  <page-footer class="wxpms_ipk"><style>.wxpms_ipk footer{border-top:1px solid #333;font-size:0.8em;color:#999;padding:3rem 0}.wxpms_ipk ul{list-style:none}.wxpms_ipk li{line-height:2}.wxpms_ipk a:link,.wxpms_ipk a:visited{color:#ccc;text-underline-offset:0.2em;text-decoration-color:#444}.wxpms_ipk a:hover,.wxpms_ipk a:focus{text-decoration-color:var(--color-teal-T600);color:#fff}</style>
 
 
 
-<footer>
-<ul>
-<li><a href="https://onramp.netlify.app">Get your own version</a> of this site to quickly ramp up on <a href="https://www.netlify.com/">Netlify</a></li>
-<li>This site is powered by Netlify and this <a href="https://github.com/philhawksworth/onramp">GitHub repo</a></li>
-<li>You can also explore the <a href="https://github.com/philhawksworth/onramp">original repo</a> it was cloned from.</li>
-</ul>
-</footer>
+  <footer>
+    <ul>
+      <li>Deploys powered by <a href="https://netlify.com/">Netlify</a></li>
+      <li>Example onramp site code can be found in this <a href="https://github.com/philhawksworth/onramp">GitHub repo</a></li>
+    </ul>
+  </footer>
 
 
 
-</page-footer>
+  </page-footer>
 
 
 </body>
+
 </html>
